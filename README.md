@@ -10,7 +10,7 @@ This process creates a spatial map where similar data points are positioned near
 
 
 
-<img width="608" alt="Screenshot 2024-11-30 at 15 29 46" src="https://github.com/user-attachments/assets/6ec7d534-1c41-45b2-ae04-b93333025968"># SOM-Based-Digit-Recognition
+<img width="608" alt="Screenshot 2024-11-30 at 15 29 46" src="https://github.com/user-attachments/assets/6ec7d534-1c41-45b2-ae04-b93333025968">
 
 
 
@@ -101,9 +101,13 @@ Minimizing these metrics ensures that all classes are well-represented by the we
 
 **Note: This program is designed to run on Windows!**
 
+
 1. Download the `main.exe` file along with the following data files:
-   - `digits_test.csv`
-   - `digits_test_key.csv`
+   - `digits_test.csv` - The input data containing 10,000 grayscale images of digits (0-9), each represented as a 28x28 pixel matrix.
+   - `digits_test_key.csv` - The labels for each image (used for evaluation after training)
+   -  Make sure you have the necessary Python libraries installed. You can install them using the following command:
+
+pip install numpy matplotlib pandas
 
 2. Place all files in the same directory.
 
