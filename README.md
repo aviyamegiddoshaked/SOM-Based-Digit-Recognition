@@ -6,7 +6,16 @@ During training, each neuron competes to become the "best matching unit" (BMU) f
 
 This process creates a spatial map where similar data points are positioned near each other, making SOMs highly effective for tasks like pattern recognition, data visualization, and exploratory analysis.
 
+
+
+
+
 <img width="608" alt="Screenshot 2024-11-30 at 15 29 46" src="https://github.com/user-attachments/assets/6ec7d534-1c41-45b2-ae04-b93333025968"># SOM-Based-Digit-Recognition
+
+
+
+
+
 
 
 
@@ -67,10 +76,7 @@ The training process for the Self-Organizing Map (SOM) consists of two main step
 3. **Dynamic Learning Parameters**  
    To ensure convergence, both the learning rate (`α`) and the influence radius (`σ`) are gradually reduced over time. The decay is computed exponentially as follows:  
    ```math
-   α_t = 0.005 + (α_0 - 0.005) ⋅ e^{-\frac{5t}{n}}
-
- ```math
-   σ_t = σ_0 ⋅ e^{-\frac{t}{n/2}}
+   α_t = 0.005 + (α_0 - 0.005) ⋅ e^{-\frac{5t}{n}} = σ_0 ⋅ e^{-\frac{t}{n/2}}
 
 
 where:
@@ -91,7 +97,7 @@ The best solution is selected based on a combination of the following metrics:
 
 Minimizing these metrics ensures that all classes are well-represented by the weights, transitions between them are smoother, and every neuron is clearly associated with a specific digit class.
 
-### How to Run the SOM Program
+## How to Run the SOM Program
 
 **Note: This program is designed to run on Windows!**
 
